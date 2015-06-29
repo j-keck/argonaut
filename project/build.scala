@@ -65,7 +65,7 @@ object build extends Build {
       Seq(
       ) map exclude[MissingMethodProblem] } */
     )
-  )
+  ).configure(_.enablePlugins(org.scalajs.sbtplugin.ScalaJSPlugin))
 
   val benchmark = Project(
     id = "benchmark"
