@@ -37,7 +37,7 @@ object build extends Build {
   , settings = base ++
     ReplSettings.all ++
     releaseSettings ++
-    PublishSettings.all ++
+    PublishSettingsScalaJS.all ++ 
     InfoSettings.all ++
     Seq(addCompilerPlugin("org.scalamacros" % "paradise" % paradiseVersion cross CrossVersion.full)) ++
     net.virtualvoid.sbt.graph.Plugin.graphSettings ++ Seq[Sett](
