@@ -1,13 +1,7 @@
-# WARNING
-currently __not__ usable with scala-js.0.6.4 - argonaut depends on StringBuilder.appendCodePoint with is missing in scala.js.
 
-pull request ist pending: https://github.com/scala-js/scala-js/pull/1792
-
-----
-
-  * fork of [https://github.com/argonaut-io/argonaut](https://github.com/argonaut-io/argonaut) 
-  * only for scala.js bits
-  * i publish the binary packages for scala-2.11 and scala-js-0.6.2 under https://bintray.com/j-keck/maven/argonaut/view
+  * fork of [https://github.com/argonaut-io/argonaut](https://github.com/argonaut-io/argonaut) for scala.js
+  * only for scala.js >= 0.6.5 
+  * i publish the binary packages for scala-2.11 and scala-js-0.6.5 under https://bintray.com/j-keck/maven/argonaut/view
 
 # SBT usage
 
