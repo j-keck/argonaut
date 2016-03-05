@@ -38,7 +38,7 @@ object build extends Build {
   val commonSettings = base ++
     ReplSettings.all ++
     releaseSettings ++
-    PublishSettings.all ++
+    PublishSettingsScalaJS.all ++
     InfoSettings.all ++
     Seq(addCompilerPlugin("org.scalamacros" % "paradise" % paradiseVersion cross CrossVersion.full)) ++
     net.virtualvoid.sbt.graph.Plugin.graphSettings ++ Seq[Sett](
@@ -139,4 +139,5 @@ object build extends Build {
     , publishArtifact := false
     )
   ).aggregate(argonaut, argonautScalaz, argonautMonocle, argonautCats, argonautBenchmark)
+   .configure(_.enablePlugins(org.scalajs.sbtplugin.ScalaJSPlugin))
 }
